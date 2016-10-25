@@ -1,0 +1,16 @@
+Source: c1-uboot
+Section: misc
+Priority: optional
+Maintainer: Rohan Garg <rohan@kde.org>
+Build-Depends: debhelper (>= 9)
+Standards-Version: 3.9.8
+Homepage: https://github.com/mdrjr/c1_uboot_binaries
+
+Package: c1-uboot
+Architecture: armhf
+Replaces: u-boot (<= 20160712-e8d530f-17)
+Breaks: u-boot (<= 20160712-e8d530f-17)
+Conflicts: u-boot (<= 20160712-e8d530f-17)
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: ODROID-C1 U-Boot 
+ This package contains the bootloader for the ODROID C1
